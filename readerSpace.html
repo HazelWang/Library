@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 
@@ -496,4 +497,504 @@
 
 	</body>
 
+=======
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+	<head>
+		<title>Reader Space</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/linea-icon.css" />
+		<link rel="stylesheet" href="css/fancy-buttons.css" />
+
+		<!--=== Other CSS files ===-->
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/jquery.vegas.css" />
+		<link rel="stylesheet" href="css/baraja.css" />
+		<link rel="stylesheet" href="css/jquery.bxslider.css" />
+
+		<!--=== Main Stylesheets ===-->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+
+		<!--=== Color Scheme, three colors are available red.css, orange.css and gray.css ===-->
+		<link rel="stylesheet" id="scheme-source" href="css/schemes/gray.css" />
+		<!-- DataTables -->
+		<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+		<!--=== Internet explorer fix ===-->
+		<!-- [if lt IE 9]>
+		<script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif] -->
+
+	</head>
+
+	<body style="background-color:Transparent;">
+		<div class="row" style="margin-bottom: 100px; background-color:#000000;opacity:0.9;">
+			<div class="col-md-1" style="margin-top:80px ; background-color:#000000;opacity:0.9;">
+				<ul class="nav nav-pills nav-stacked" style="width: 40px;">
+					<li role="presentation" class="active">
+						<a href="#myBorrow" aria-controls="myBorrow" role="tab" data-toggle="tab">当<br />前<br />借<br />阅</a>
+					</li>
+					<li role="presentation">
+						<a href="#borrowHistory" aria-controls="borrowHistory" role="tab" data-toggle="tab">借<br />阅<br />历<br />史</a>
+					</li>
+					<li role="presentation">
+						<a href="#myAppointment" aria-controls="myAppointment" role="tab" data-toggle="tab">当<br />前<br />预<br />约</a>
+					</li>
+					<li role="presentation">
+						<a href="#appointmentHistory" aria-controls="appointmentHistory" role="tab" data-toggle="tab">预<br />约<br />历<br />史</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-11" style="margin-top:80px; margin-left:-60px; background-color:#FFFFFF;opacity:0.9;">
+				<div class="tab-content">
+					<!--当前借阅-->
+					<div role="tabpanel" class="tab-pane active" id="myBorrow">
+						<div class="panel panel-default" style="border: 0px;padding-bottom: 250px;">
+							<div class="row">
+								<div class="col-md-11 animated" data-animation="fadeInUp" data-animation-delay="0" style="padding-left: 10%;margin-top: 30px;">
+									<!-- Default panel contents -->
+									<div class="panel">
+										<div class="row">
+											<div class="col-md-4">
+												<h3 class="center"><b>当前借阅</b></h3>
+											</div>
+										</div>
+									</div>
+									<table class="table table-hover table-striped" style="color: black;">
+										<thead>
+											<tr>
+												<th>书籍编号</th>
+												<th>索书号</th>
+												<th>书名</th>
+												<th>借阅时间</th>
+												<th>应还日期</th>
+												<th>续借次数</th>
+												<th>操作</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 4.0
+												</td>
+												<td>Win 95+</td>
+												<td>15325436364746</td>
+												<td>5</td>
+												<td>X</td>
+											<td>
+													<a href="#" style="color: black;">续借</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 5.0
+												</td>
+												<td>Win 95+</td>
+												<td>15325436364746</td>
+												<td>5</td>
+												<td>C</td>
+											<td>
+													<a href="#" style="color: black;">续借</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 5.5
+												</td>
+												<td>Win 95+</td>
+												<td>15325436364746</td>
+												<td>5.5</td>
+												<td>A</td>
+											<td>
+													<a href="#" style="color: black;">续借</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 6
+												</td>
+												<td>Win 98+</td>
+												<td>15325436364746</td>
+												<td>6</td>
+												<td>A</td>
+											<td>
+													<a href="#" style="color: black;">续借</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 7</td>
+												<td>Win XP SP2+</td>
+												<td>15325436364746</td>
+												<td>7</td>
+												<td>A</td>
+											<td>
+													<a href="#" style="color: black;">续借</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!--借阅历史-->
+					<div role="tabpanel" class="tab-pane" id="borrowHistory">
+						<div class="panel panel-default" style="border: 0px;padding-bottom: 200px;">
+							<div class="row">
+								<div class="col-md-11 animated" data-animation="fadeInUp" data-animation-delay="0" style="padding-left: 10%;margin-top: 30px;">
+									<!-- Default panel contents -->
+									<div class="panel">
+										<div class="row">
+											<div class="col-md-4">
+												<h3 class="center"><b>借阅历史</b></h3>
+											</div>
+										</div>
+									</div>
+									<table class="table table-hover table-striped" style="color: black;">
+										<thead>
+											<tr>
+												<th>书籍编号</th>
+												<th>索书号</th>
+												<th>书名</th>
+												<th>借阅时间</th>
+												<th>归还时间</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 4.0
+												</td>
+												<td>Win 95+</td>
+												<td>15325436364746</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 5.0
+												</td>
+												<td>Win 95+</td>
+												<td>15325436364746</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 5.5
+												</td>
+												<td>Win 95+</td>
+												<td>15325436364746</td>
+												<td>5.5</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 6
+												</td>
+												<td>Win 98+</td>
+												<td>15325436364746</td>
+												<td>6</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 7</td>
+												<td>Win XP SP2+</td>
+												<td>15325436364746</td>
+												<td>7</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="row" style="font-size: 20px;">
+										<div class="col-md-6 col-md-offset-3">
+											<div class="center">
+												<ul class="pagination">
+													<li>
+														<a href="#" aria-label="Previous">
+															<span aria-hidden="true">&laquo;</span>
+														</a>
+													</li>
+													<li>
+														<a href="#">1</a>
+													</li>
+													<li>
+														<a href="#">2</a>
+													</li>
+													<li>
+														<a href="#">3</a>
+													</li>
+													<li>
+														<a href="#">4</a>
+													</li>
+													<li>
+														<a href="#">5</a>
+													</li>
+													<li>
+														<a href="#">6</a>
+													</li>
+													<li>
+														<a href="#">7</a>
+													</li>
+													<li>
+														<a href="#">8</a>
+													</li>
+													<li>
+														<a href="#">9</a>
+													</li>
+													<li>
+														<a href="#" aria-label="Next">
+															<span aria-hidden="true">&raquo;</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!--当前预约-->
+					<div role="tabpanel" class="tab-pane" id="myAppointment">
+						<div class="panel panel-default" style="border: 0px;padding-bottom: 250px;">
+							<div class="row">
+								<div class="col-md-11 animated" data-animation="fadeInUp" data-animation-delay="0" style="padding-left: 10%;margin-top: 30px;">
+									<!-- Default panel contents -->
+									<div class="panel">
+										<div class="row">
+											<div class="col-md-4">
+												<h3 class="center"><b>当前预约</b></h3>
+											</div>
+										</div>
+									</div>
+									<table class="table table-hover table-striped" style="color: black;">
+										<thead>
+											<tr>
+												<th>书籍编号</th>
+												<th>索书号</th>
+												<th>书名</th>
+												<th>预约时间</th>
+												<th>操作</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 4.0
+												</td>
+												<td>Win 95+</td>
+												<td>15325436364746</td>
+											<td>
+													<a href="#" style="color: black;">取消预约</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 5.0
+												</td>
+												<td>Win 95+</td>
+												<td>15325436364746</td>
+
+											<td>
+													<a href="#" style="color: black;">取消预约</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 5.5
+												</td>
+												<td>Win 95+</td>
+												<td>15325436364746</td>
+
+											<td>
+													<a href="#" style="color: black;">取消预约</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 6
+												</td>
+												<td>Win 98+</td>
+												<td>15325436364746</td>
+											<td>
+													<a href="#" style="color: black;">取消预约</a>
+												</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 7</td>
+												<td>Win XP SP2+</td>
+												<td>15325436364746</td>
+											<td>
+													<a href="#" style="color: black;">取消预约</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!--预约历史-->
+					<div role="tabpanel" class="tab-pane" id="appointmentHistory">
+						<div class="panel panel-default" style="border: 0px;margin-bottom: 200px">
+							<div class="row">
+								<div class="col-md-11 animated" data-animation="fadeInUp" data-animation-delay="0" style="padding-left: 10%;margin-top: 30px;">
+									<!-- Default panel contents -->
+									<div class="panel">
+										<div class="row">
+											<div class="col-md-4">
+												<h3 class="center"><b>预约历史</b></h3>
+											</div>
+										</div>
+									</div>
+									<table class="table table-hover table-striped" style="color: black;">
+										<thead>
+											<tr>
+												<th>书籍编号</th>
+												<th>索书号</th>
+												<th>书名</th>
+												<th>预约时间</th>
+												<th>是否借阅</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 4.0
+												</td>
+												<td>Win 95+</td>
+												<td>15325436364746</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 5.0
+												</td>
+												<td>Win 95+</td>
+												<td>15325436364746</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 5.5
+												</td>
+												<td>Win 95+</td>
+												<td>15325436364746</td>
+												<td>5.5</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 6
+												</td>
+												<td>Win 98+</td>
+												<td>15325436364746</td>
+												<td>6</td>
+											</tr>
+											<tr>
+												<td>Trident</td>
+												<td>Internet Explorer 7</td>
+												<td>Win XP SP2+</td>
+												<td>15325436364746</td>
+												<td>7</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="row" style="font-size: 20px;">
+										<div class="col-md-6 col-md-offset-3">
+											<div class="center">
+												<ul class="pagination">
+													<li>
+														<a href="#" aria-label="Previous">
+															<span aria-hidden="true">&laquo;</span>
+														</a>
+													</li>
+													<li>
+														<a href="#">1</a>
+													</li>
+													<li>
+														<a href="#">2</a>
+													</li>
+													<li>
+														<a href="#">3</a>
+													</li>
+													<li>
+														<a href="#">4</a>
+													</li>
+													<li>
+														<a href="#">5</a>
+													</li>
+													<li>
+														<a href="#">6</a>
+													</li>
+													<li>
+														<a href="#">7</a>
+													</li>
+													<li>
+														<a href="#">8</a>
+													</li>
+													<li>
+														<a href="#">9</a>
+													</li>
+													<li>
+														<a href="#" aria-label="Next">
+															<span aria-hidden="true">&raquo;</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--==== Js files ====-->
+		<!--==== Essential files ====-->
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+		<!--==== Slider and Card style plugin ====-->
+		<script type="text/javascript" src="js/jquery.baraja.js"></script>
+		<script type="text/javascript" src="js/jquery.vegas.min.js"></script>
+		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+		<!--==== MailChimp Widget plugin ====-->
+		<script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+
+		<!--==== Scroll and navigation plugins ====-->
+		<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+		<script type="text/javascript" src="js/jquery.nav.js"></script>
+		<script type="text/javascript" src="js/jquery.appear.js"></script>
+		<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+
+		<!--==== Custom Script files ====-->
+		<script type="text/javascript" src="js/custom.js"></script>
+
+		<!-- DataTables -->
+		<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="js/dataTables.bootstrap.min.js"></script>
+
+	</body>
+
+>>>>>>> 0f1b17a81f92c4eb18d367a85abecc4f176f0b39
 </html>
