@@ -1,0 +1,1033 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+	<head>
+		<title>librarian Space</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/linea-icon.css" />
+		<link rel="stylesheet" href="css/fancy-buttons.css" />
+
+		<!--=== Other CSS files ===-->
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/jquery.vegas.css" />
+		<link rel="stylesheet" href="css/baraja.css" />
+		<link rel="stylesheet" href="css/jquery.bxslider.css" />
+
+		<!--=== Main Stylesheets ===-->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+
+		<!--=== Color Scheme, three colors are available red.css, orange.css and gray.css ===-->
+		<link rel="stylesheet" id="scheme-source" href="css/schemes/gray.css" />
+		<link rel="stylesheet" type="text/css" href="css/boxs.css">
+
+	</head>
+
+	<body style="background-color:Transparent;">
+
+		<div class="row" style="background-color:#000000;opacity:0.9;padding-top: 80px;">
+			<div class="col-md-1">
+
+				<ul class="nav nav-pills nav-stacked" style="width: 40px;">
+					<li role="presentation" class="active">
+						<a href="#home" aria-controls="home" role="tab" data-toggle="tab">图<br/>书<br/>管<br/>理</a>
+					</li>
+					<li role="presentation">
+						<a href="#borrow" aria-controls="borrow" role="tab" data-toggle="tab"><br/>借<br/>书<br/><br/></a>
+					</li>
+					<li role="presentation">
+						<a href="#return" aria-controls="return" role="tab" data-toggle="tab"><br/>还<br/>书<br/><br/></a>
+					</li>
+				</ul>
+
+			</div>
+
+			<div class="col-md-11">
+				<div class="tab-content">
+
+					<!--=== Book Manage ===-->
+					<div role="tabpanel" class="tab-pane active" id="home">
+						<div class="panel panel-default" style="border: 0px; padding-top:50px ; padding-bottom: 300px; background-color:#000000;opacity:0.9">
+							<div class="row">
+								<div class="col-md-11 animated" data-animation="fadeInUp" data-animation-delay="200" style="padding-left: 10%;">
+
+									<!--=== panel-header ===-->
+									<div class="panel">
+										<div class="row">
+											<div class="col-md-3">
+												<h3 class="center" style="margin-left: 20px;"><b>图书管理</b></h3>
+											</div>
+
+											<!--=== input-group ===-->
+											<div class="col-md-6 ">
+												<div class="input-group input-group-lg" style="margin-top:20px ;">
+													<span class="input-group-btn">
+        												<button class="btn btn-default" type="button">Go!</button>
+      												</span>
+													<input type="text" class="form-control" placeholder="Search for...">
+												</div>
+											</div>
+
+											<div class="col-md-2"><button type="button" class="btn btn-default btn-lg" style="margin-top: 20px;" data-toggle="modal" data-target="#myModal">添加书籍信息</button></div>
+										</div>
+										<div class="center">
+											<a data-toggle="collapse" data-parent="#accordion" href="#box1"><span class="glyphicon glyphicon-chevron-down" style="color: black;font-size:15px;"></span></a>
+										</div>
+									</div>
+
+									<!--=== Condition Screening ===-->
+									<div id="box1" class="panel-collapse collapse">
+										<ul class="select">
+											<li class="select-list">
+												<dl id="select1">
+													<dt>分类：</dt>
+													<dd class="select-all selected">
+														<a href="#">全部</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">情感</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">生活</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">教育</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">历史</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">小说</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">美食</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">旅游</a>
+													</dd>
+												</dl>
+											</li>
+											<li class="select-list">
+												<dl id="select2">
+													<dt>出版时间：</dt>
+													<dd class="select-all selected">
+														<a href="javascript:void(0);">全部</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">2008</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">2007</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">2009</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">2010</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">2011</a>
+													</dd>
+												</dl>
+											</li>
+											<li class="select-list">
+												<dl id="select3">
+													<dt>出版社: </dt>
+													<dd class="select-all selected">
+														<a href="javascript:void(0);">全部</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">xx出版社</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">qq出版社</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">cc出版社</a>
+													</dd>
+													<dd>
+														<a href="javascript:void(0);">yy出版社</a>
+													</dd>
+												</dl>
+											</li>
+											<li class="select-result">
+												<dl>
+													<dt>已选条件：</dt>
+													<dd class="select-no">暂时没有选择过滤条件</dd>
+												</dl>
+											</li>
+										</ul>
+									</div>
+
+									<!--=== BookList ===-->
+									<ul class="list-group" style=" font-size: 15px;">
+										<li class="list-group-item">
+											<span class="badge">10/14</span>
+											<div class="media">
+												<div class="row">
+													<div class="col-md-3 media-left media-middle">
+														<a href="#">
+															<img class="media-object" src="images/2.jpg" style="margin-left: 30px;" alt="..." width="130px">
+														</a>
+													</div>
+													<div class="col-md-7 media-body">
+														<h4 class="media-heading"><b>书名</b></h4>
+														<h5><b>作者</b></h5>
+														<h5><b>出版社</b></h5>
+														<h5><b>出版日期</b></h5>
+														<h5><b>索书号</b></h5>
+													</div>
+													<td>
+														<div class="row">
+															<div class="col-md-2 ">
+																<a class="btn glyphicon glyphicon-plus" style="margin-top: 50px; font-size: 30px;color: #000000;" data-toggle="modal" data-target="#myModal1"></a>
+															</div>
+														</div>
+													</td>
+												</div>
+
+												<div class="center">
+													<a data-toggle="collapse" data-parent="#accordion" href="#table1"><span class="glyphicon glyphicon-chevron-down" style="color: black;font-size:15px;"></span></a>
+												</div>
+
+											</div>
+
+											<div class="row">
+												<div class="col-md-12 panel-collapse collapse" id="table1">
+													<table class="table table-hover table-striped" style="color: black;">
+														<thead>
+															<tr>
+																<th>书籍编号</th>
+																<th>索书号</th>
+																<th>书名</th>
+																<th>借阅次数</th>
+																<th>当前状态</th>
+																<th>应还日期</th>
+																<th>
+																	操作
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 4.0
+																</td>
+																<td>Win 95+</td>
+																<td>15325436364746</td>
+																<td>5</td>
+																<td>X</td>
+																<td>
+																	<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																</td>
+															</tr>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 5.0
+																</td>
+																<td>Win 95+</td>
+																<td>15325436364746</td>
+																<td>5</td>
+																<td>C</td>
+																<td>
+																	<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																</td>
+															</tr>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 5.5
+																</td>
+																<td>Win 95+</td>
+																<td>15325436364746</td>
+																<td>5.5</td>
+																<td>A</td>
+																<td>
+																	<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																</td>
+															</tr>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 6
+																</td>
+																<td>Win 98+</td>
+																<td>15325436364746</td>
+																<td>6</td>
+																<td>A</td>
+																<td>
+																	<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																</td>
+															</tr>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 7</td>
+																<td>Win XP SP2+</td>
+																<td>15325436364746</td>
+																<td>7</td>
+																<td>A</td>
+																<td>
+																	<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+
+										</li>
+										
+										<li class="list-group-item">
+											<span class="badge">10/14</span>
+											<div class="media">
+												<div class="row">
+													<div class="col-md-3 media-left media-middle">
+														<a href="#">
+															<img class="media-object" src="images/2.jpg" style="margin-left: 30px;" alt="..." width="130px">
+														</a>
+													</div>
+													<div class="col-md-7 media-body">
+														<h4 class="media-heading"><b>书名</b></h4>
+														<h5><b>作者</b></h5>
+														<h5><b>出版社</b></h5>
+														<h5><b>出版日期</b></h5>
+														<h5><b>索书号</b></h5>
+													</div>
+													<td>
+														<div class="row">
+															<div class="col-md-2 ">
+																<a class="btn glyphicon glyphicon-plus" style="margin-top: 50px; font-size: 30px;color: #000000;" data-toggle="modal" data-target="#myModal1"></a>
+															</div>
+														</div>
+													</td>
+												</div>
+												
+												<div class="center">
+													<a data-toggle="collapse" data-parent="#accordion" href="#table2"><span class="glyphicon glyphicon-chevron-down" style="color: black;font-size:15px;"></span></a>
+												</div>
+												
+											</div>
+											
+											<div class="row">
+												<div class="col-md-12 panel-collapse collapse" id="table2">
+													<table class="table table-hover table-striped" style="color: black;">
+														<thead>
+															<tr>
+																<th>书籍编号</th>
+																<th>索书号</th>
+																<th>书名</th>
+																<th>借阅次数</th>
+																<th>当前状态</th>
+																<th>应还日期</th>
+																<th>操作</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 4.0
+																</td>
+																<td>Win 95+</td>
+																<td>15325436364746</td>
+																<td>5</td>
+																<td>X</td>
+																<td>
+																	<div class="row">
+																		<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																	</div>
+
+																</td>
+															</tr>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 5.0
+																</td>
+																<td>Win 95+</td>
+																<td>15325436364746</td>
+																<td>5</td>
+																<td>C</td>
+																<td>
+																	<div class="row">
+																		<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																	</div>
+
+																</td>
+															</tr>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 5.5
+																</td>
+																<td>Win 95+</td>
+																<td>15325436364746</td>
+																<td>5.5</td>
+																<td>A</td>
+																<td>
+																	<div class="row">
+																		<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																	</div>
+
+																</td>
+															</tr>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 6
+																</td>
+																<td>Win 98+</td>
+																<td>15325436364746</td>
+																<td>6</td>
+																<td>A</td>
+																<td>
+																	<div class="row">
+																		<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																	</div>
+
+																</td>
+															</tr>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 7</td>
+																<td>Win XP SP2+</td>
+																<td>15325436364746</td>
+																<td>7</td>
+																<td>A</td>
+																<td>
+																	<div class="row">
+																		<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																	</div>
+
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+
+										</li>
+										
+										<li class="list-group-item">
+											<span class="badge">10/14</span>
+											<div class="media">
+												<div class="row">
+													<div class="col-md-3 media-left media-middle">
+														<a href="#">
+															<img class="media-object" src="images/2.jpg" style="margin-left: 30px;" alt="..." width="130px">
+														</a>
+													</div>
+													<div class="col-md-7 media-body">
+														<h4 class="media-heading"><b>书名</b></h4>
+														<h5><b>作者</b></h5>
+														<h5><b>出版社</b></h5>
+														<h5><b>出版日期</b></h5>
+														<h5><b>索书号</b></h5>
+													</div>
+													<td>
+														<div class="row">
+															<div class="col-md-2 ">
+																<a class="btn glyphicon glyphicon-plus" style="margin-top: 50px; font-size: 30px;color: #000000;" data-toggle="modal" data-target="#myModal1"></a>
+															</div>
+														</div>
+													</td>
+												</div>
+												
+												<div class="center">
+													<a data-toggle="collapse" data-parent="#accordion" href="#table3"><span class="glyphicon glyphicon-chevron-down" style="color: black;font-size:15px;"></span></a>
+												</div>
+												
+											</div>
+											
+											<div class="row">
+												<div class="col-md-12 panel-collapse collapse" id="table3">
+													<table class="table table-hover table-striped" style="color: black;">
+														<thead>
+															<tr>
+																<th>书籍编号</th>
+																<th>索书号</th>
+																<th>书名</th>
+																<th>借阅次数</th>
+																<th>当前状态</th>
+																<th>应还日期</th>
+																<th>操作</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 4.0
+																</td>
+																<td>Win 95+</td>
+																<td>15325436364746</td>
+																<td>5</td>
+																<td>X</td>
+																<td>
+																	<div class="row">
+																		<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																	</div>
+
+																</td>
+															</tr>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 5.0
+																</td>
+																<td>Win 95+</td>
+																<td>15325436364746</td>
+																<td>5</td>
+																<td>C</td>
+																<td>
+																	<div class="row">
+																		<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																	</div>
+
+																</td>
+															</tr>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 5.5
+																</td>
+																<td>Win 95+</td>
+																<td>15325436364746</td>
+																<td>5.5</td>
+																<td>A</td>
+																<td>
+																	<div class="row">
+																		<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																	</div>
+
+																</td>
+															</tr>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 6
+																</td>
+																<td>Win 98+</td>
+																<td>15325436364746</td>
+																<td>6</td>
+																<td>A</td>
+																<td>
+																	<div class="row">
+																		<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																	</div>
+
+																</td>
+															</tr>
+															<tr>
+																<td>Trident</td>
+																<td>Internet Explorer 7</td>
+																<td>Win XP SP2+</td>
+																<td>15325436364746</td>
+																<td>7</td>
+																<td>A</td>
+																<td>
+																	<div class="row">
+																		<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																	</div>
+
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+
+										</li>
+									</ul>
+
+									<div class="row" style="font-size: 20px;">
+										<div class="col-md-6 col-md-offset-3">
+											<div class="center">
+												<ul class="pagination">
+													<li>
+														<a href="#" aria-label="Previous">
+															<span aria-hidden="true">&laquo;</span>
+														</a>
+													</li>
+													<li>
+														<a href="#">1</a>
+													</li>
+													<li>
+														<a href="#">2</a>
+													</li>
+													<li>
+														<a href="#">3</a>
+													</li>
+													<li>
+														<a href="#">4</a>
+													</li>
+													<li>
+														<a href="#">5</a>
+													</li>
+													<li>
+														<a href="#">6</a>
+													</li>
+													<li>
+														<a href="#">7</a>
+													</li>
+													<li>
+														<a href="#">8</a>
+													</li>
+													<li>
+														<a href="#">9</a>
+													</li>
+													<li>
+														<a href="#" aria-label="Next">
+															<span aria-hidden="true">&raquo;</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!--=== Borrow Books ===-->
+					<div role="tabpanel" class="tab-pane" id="borrow">
+						<section id="section-pricing" class="pricing-wrap" style="background-color:#000000;opacity:0.9">
+							<div class="container" style="padding-top: 50px; padding-bottom: 200px;">
+								<div class="row">
+									<div class="col-md-12 col-sm-6 single-pricing-wrap animated" data-animation="bounceInLeft" data-animation-delay="0">
+										<div class="single-pricing">
+											<div class="pricing-head" style="background-color:#CCCCCC;">
+												
+												<!--=== BorrowBooks-header ===-->
+												<form class="form-inline">
+													<div class="row">
+														<div class="col-md-4 col-md-offset-1">
+															<input type="text" class="form-control" style="width: 90%;" id="exampleInputName2" placeholder="账号">
+														</div>
+														<div class="col-md-4">
+															<input type="text" class="form-control" style="width: 90%;" id="exampleInputEmail2" placeholder="图书条码号">
+														</div>
+														<div class="col-md-1">
+															<button type="submit" class="btn btn-default">借书</button>
+														</div>
+													</div>
+												</form>
+
+												<!--=== Info details ===-->
+												<div class="pricing-head" style="background-color: #DDDDDD;">
+													<div class="row">
+														<div class="col-md-5 col-md-offset-3">
+															<h4 class="pricing-heading color-scheme" style="margin-bottom: 40px;color: #000000;"><b>读者信息</b></h4>
+														</div>
+														<div class="col-md-4">
+															<h4 class="pricing-heading color-scheme" style="margin-bottom: 40px;color: #000000;"><b>书籍信息</b></h4>
+														</div>
+													</div>
+
+													<ul class="package-features" style=" font-size: 15px;">
+														<li>
+															<div class="row">
+																<div class="col-md-3 col-md-offset-1" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>账号</div>
+																<div class="col-md-4" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>当前状态</div>
+																<div class="col-md-4" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>书名</div>
+															</div>
+														</li>
+														<li>
+															<div class="row">
+																<div class="col-md-3 col-md-offset-1" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>姓名</div>
+																<div class="col-md-4" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>最大借阅数量</div>
+																<div class="col-md-4" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>索书号</div>
+															</div>
+														</li>
+														<li>
+															<div class="row">
+																<div class="col-md-3 col-md-offset-1" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>性别</div>
+																<div class="col-md-4" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>权限</div>
+																<div class="col-md-4" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>出版社</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+
+
+												<!--=== Current Lending ===-->
+												<a data-toggle="collapse" href="#borrowed0" aria-expanded="false" aria-controls="borrowed0">
+													<h4 class="pricing-heading color-scheme center" style="margin-bottom: 40px;color: #000000;"><b>当前借阅</b></h4>
+												</a>
+												<div class="collapse" id="borrowed0">
+
+													<div class="row">
+														<div class="col-md-11" style="margin-left: 4%;">
+															<table class="table table-hover table-striped" style="color: black; font-size: 15px;">
+																<thead>
+																	<tr>
+																		<th>书籍编号</th>
+																		<th>索书号</th>
+																		<th>书名</th>
+																		<th>结束日期</th>
+																		<th>应还日期</th>
+																		<th>还书日期</th>
+																		<th>操作</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>Trident</td>
+																		<td>Internet Explorer 4.0
+																		</td>
+																		<td>Win 95+</td>
+																		<td>15325436364746</td>
+																		<td>5</td>
+																		<td>X</td>
+																		<td>
+																			<div class="row">
+																				<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																			</div>
+
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>Trident</td>
+																		<td>Internet Explorer 5.0
+																		</td>
+																		<td>Win 95+</td>
+																		<td>15325436364746</td>
+																		<td>5</td>
+																		<td>C</td>
+																		<td>
+																			<div class="row">
+																				<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																			</div>
+
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>Trident</td>
+																		<td>Internet Explorer 5.5
+																		</td>
+																		<td>Win 95+</td>
+																		<td>15325436364746</td>
+																		<td>5.5</td>
+																		<td>A</td>
+																		<td>
+																			<div class="row">
+																				<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																			</div>
+
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>Trident</td>
+																		<td>Internet Explorer 6
+																		</td>
+																		<td>Win 98+</td>
+																		<td>15325436364746</td>
+																		<td>6</td>
+																		<td>A</td>
+																		<td>
+																			<div class="row">
+																				<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																			</div>
+
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>Trident</td>
+																		<td>Internet Explorer 7</td>
+																		<td>Win XP SP2+</td>
+																		<td>15325436364746</td>
+																		<td>7</td>
+																		<td>A</td>
+																		<td>
+																			<div class="row">
+																				<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																			</div>
+
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												<!--===Current Lending Ends ===-->
+												
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</section>
+					</div>
+					
+					<!--=== Return Books ===-->
+					<div role="tabpanel" class="tab-pane" id="return">
+						<section id="section-pricing" class="pricing-wrap" style="background-color:#000000;opacity:0.9">
+
+							<div class="container" style="padding-top: 50px; padding-bottom: 200px;">
+								<div class="row">
+									<div class="col-md-12 col-sm-6 single-pricing-wrap animated" data-animation="bounceInLeft" data-animation-delay="0">
+										<div class="single-pricing">
+											<div class="pricing-head" style="background-color:#CCCCCC;">
+												
+												<!--=== ReturnBooks-header ===-->
+												<form class="form-inline">
+													<div class="row">
+														<div class="col-md-4 col-md-offset-1">
+															<input type="text" class="form-control" style="width: 90%;" id="exampleInputName2" placeholder="账号">
+														</div>
+														<div class="col-md-4">
+															<input type="text" class="form-control" style="width: 90%;" id="exampleInputEmail2" placeholder="图书条码号">
+														</div>
+														<div class="col-md-1">
+															<button type="submit" class="btn btn-default">还书</button>
+														</div>
+													</div>
+												</form>
+
+												<!--=== Info details ===-->
+												<div class="pricing-head" style="background-color: #DDDDDD;">
+													<h4 class="pricing-heading color-scheme center" style="color: #000000;"><b>读者信息</b></h4>
+													<ul class="package-features" style=" font-size: 15px;">
+														<li>
+															<div class="row">
+																<div class="col-md-3 col-md-offset-1" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>账号</div>
+																<div class="col-md-4" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>当前状态</div>
+																<div class="col-md-4" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>书名</div>
+															</div>
+														</li>
+														<li>
+															<div class="row">
+																<div class="col-md-3 col-md-offset-1" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>姓名</div>
+																<div class="col-md-4" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>最大借阅数量</div>
+																<div class="col-md-4" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>索书号</div>
+															</div>
+														</li>
+														<li>
+															<div class="row">
+																<div class="col-md-3 col-md-offset-1" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>性别</div>
+																<div class="col-md-4" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>权限</div>
+																<div class="col-md-4" style="color: black;"><span class="color-scheme fa fa-circle-o" style="color: black;"></span>出版社</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+
+												<!--=== Current Lending ===-->
+												<a data-toggle="collapse" href="#borrowed1" aria-expanded="false" aria-controls="borrowed1">
+													<h4 class="pricing-heading color-scheme center" style="margin-bottom: 40px;color: #000000;"><b>当前借阅</b></h4>
+												</a>
+												<div class="collapse" id="borrowed1">
+													<div class="row">
+														<div class="col-md-11" style="margin-left: 4%;">
+															<table class="table table-hover table-striped" style="color: black; font-size: 15px;">
+																<thead>
+																	<tr>
+																		<th>书籍编号</th>
+																		<th>索书号</th>
+																		<th>书名</th>
+																		<th>结束日期</th>
+																		<th>应还日期</th>
+																		<th>还书日期</th>
+																		<th>操作</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>Trident</td>
+																		<td>Internet Explorer 4.0
+																		</td>
+																		<td>Win 95+</td>
+																		<td>15325436364746</td>
+																		<td>5</td>
+																		<td>X</td>
+																		<td>
+																			<div class="row">
+																				<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																			</div>
+
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>Trident</td>
+																		<td>Internet Explorer 5.0
+																		</td>
+																		<td>Win 95+</td>
+																		<td>15325436364746</td>
+																		<td>5</td>
+																		<td>C</td>
+																		<td>
+																			<div class="row">
+																				<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																			</div>
+
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>Trident</td>
+																		<td>Internet Explorer 5.5
+																		</td>
+																		<td>Win 95+</td>
+																		<td>15325436364746</td>
+																		<td>5.5</td>
+																		<td>A</td>
+																		<td>
+																			<div class="row">
+																				<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																			</div>
+
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>Trident</td>
+																		<td>Internet Explorer 6
+																		</td>
+																		<td>Win 98+</td>
+																		<td>15325436364746</td>
+																		<td>6</td>
+																		<td>A</td>
+																		<td>
+																			<div class="row">
+																				<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																			</div>
+
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>Trident</td>
+																		<td>Internet Explorer 7</td>
+																		<td>Win XP SP2+</td>
+																		<td>15325436364746</td>
+																		<td>7</td>
+																		<td>A</td>
+																		<td>
+																			<div class="row">
+																				<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												<!--=== Current Lending Ends===-->
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--=== Add-group ===-->
+		<div class="modal fade" style="margin-top: 100px;" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">添加书籍信息</h4>
+					</div>
+					<div class="modal-body">
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+							<input type="text" class="form-control" placeholder="ISBN" aria-describedby="basic-addon1">
+						</div>
+
+						<div class="input-group" style="margin-top: 20px">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-tree-conifer"></span></span>
+							<input type="text" class="form-control" placeholder="索书号" aria-describedby="basic-addon1">
+						</div>
+
+						<div class="input-group" style="margin-top: 20px">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-tree-conifer"></span></span>
+							<input type="text" class="form-control" placeholder="书名" aria-describedby="basic-addon1">
+						</div>
+
+						<div class="input-group" style="margin-top: 20px">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-tree-conifer"></span></span>
+							<input type="text" class="form-control" placeholder="作者" aria-describedby="basic-addon1">
+						</div>
+
+						<div class="input-group" style="margin-top: 20px">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-tree-conifer"></span></span>
+							<input type="text" class="form-control" placeholder="出版社" aria-describedby="basic-addon1">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">确认</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--=== SingleBook-add ===-->
+		<div class="modal fade" style="margin-top: 200px;" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+						<h4 class="modal-title" id="myModalLabel">添加</h4>
+					</div>
+					<div class="modal-body">
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+							<input type="text" class="form-control" placeholder="书号" aria-describedby="basic-addon1">
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary">确认</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="margin-top: 100px">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div style="font-family: 'Al Tarikh';font-size: 20px;background-color: #2e6da4;">
+						<p style="color: #080808;margin-left: 100px">登录信息</p>
+					</div>
+					<div>添加成功</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!--==== Js files ====-->
+		<!--==== Essential files ====-->
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+		<!--==== Slider and Card style plugin ====-->
+		<script type="text/javascript" src="js/jquery.baraja.js"></script>
+		<script type="text/javascript" src="js/jquery.vegas.min.js"></script>
+		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+		<!--==== MailChimp Widget plugin ====-->
+		<script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+
+		<!--==== Scroll and navigation plugins ====-->
+		<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+		<script type="text/javascript" src="js/jquery.nav.js"></script>
+		<script type="text/javascript" src="js/jquery.appear.js"></script>
+		<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+
+		<!--==== Custom Script files ====-->
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+
+	</body>
+
+</html>
