@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Manager Space</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- DataTables -->
+		<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/linea-icon.css" />
+		<link rel="stylesheet" href="css/fancy-buttons.css" />
+
+		<!--=== Google Fonts ===-->
+		<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+		<!--=== Other CSS files ===-->
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/jquery.vegas.css" />
+		<link rel="stylesheet" href="css/baraja.css" />
+		<link rel="stylesheet" href="css/jquery.bxslider.css" />
+
+		<!--=== Main Stylesheets ===-->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+
+		<!--=== Color Scheme, three colors are available red.css, orange.css and gray.css ===-->
+		<link rel="stylesheet" id="scheme-source" href="css/schemes/gray.css" />
+
+	</head>
+
+	<body style="background-color:Transparent;">
+		<div style="background-color:#000000;opacity:0.95;">
+			<div class="panel panel-default" style="border:0px;">
+				<!-- Default panel contents -->
+				<div class="panel-heading" style="margin-top: 80px">
+					<div class="row">
+						<div class="col-md-6">
+							<h3 class="box-title">用户管理</h3>
+						</div>
+						<div class="col-md-2 col-md-offset-4" style="margin-top: 22px"> 
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">添加用户</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Table -->
+				<section class="content" style="margin-top: 20px;padding-bottom: 300px;">
+
+					<div class="row">
+						<div class="col-xs-11" style="margin-left: 50px;">
+							<div class="box">
+								<!-- /.box-header -->
+								<div class="box-body">
+									<table id="example1" class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th>账号</th>
+												<th>姓名</th>
+												<th>性别</th>
+												<th>身份证号码</th>
+												<th>手机号码</th>
+												<th>角色</th>
+												<th>操作</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>a121432425</td>
+												<td>XXX
+												</td>
+												<td>男</td>
+												<td>15325436364746</td>
+												<td>2435436356</td>
+												<td>读者</td>
+												<td>
+													<div class="row">
+														<div class="col-md-2 ">
+															<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+														</div>
+														<div class="col-md-2 ">
+															<a href="#" class="glyphicon glyphicon-repeat" style="color: black;"></a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>b121432425</td>
+												<td>XXX
+												</td>
+												<td>女</td>
+												<td>14353664746</td>
+												<td>14225156</td>
+												<td>图书管理员</td>
+												<td>
+													<div class="row">
+														<div class="col-md-2 ">
+															<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+														</div>
+														<div class="col-md-2 ">
+															<a href="#" class="glyphicon glyphicon-repeat" style="color: black;"></a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>c23864823425</td>
+												<td>XXX
+												</td>
+												<td>女</td>
+												<td>1435577963664746</td>
+												<td>2412443656</td>
+												<td>系统管理员</td>
+												<td>
+													<div class="row">
+														<div class="col-md-2 ">
+															<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+														</div>
+														<div class="col-md-2 ">
+															<a href="#" class="glyphicon glyphicon-repeat" style="color: black;"></a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>a1985432425</td>
+												<td>XXX
+												</td>
+												<td>男</td>
+												<td>32534645757645</td>
+												<td>564578689</td>
+												<td>读者</td>
+												<td>
+													<div class="row">
+														<div class="col-md-2 ">
+															<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+														</div>
+														<div class="col-md-2 ">
+															<a href="#" class="glyphicon glyphicon-repeat" style="color: black;"></a>
+														</div>
+													</div>
+												</td>
+
+											</tr>
+											<tr>
+												<td>a1468234325</td>
+												<td>XXX
+												</td>
+												<td>男</td>
+												<td>35437569679879</td>
+												<td>53645747658</td>
+												<td>读者</td>
+												<td>
+													<div class="row">
+														<div class="col-md-2 ">
+															<a href="#" class="glyphicon glyphicon-trash" style="color: black;"></a>
+														</div>
+														<div class="col-md-2 ">
+															<a href="#" class="glyphicon glyphicon-repeat" style="color: black;"></a>
+														</div>
+													</div>
+												</td>
+
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>账号</th>
+												<th>姓名</th>
+												<th>性别</th>
+												<th>身份证号码</th>
+												<th>手机号码</th>
+												<th>角色</th>
+												<td>操作
+												</td>
+
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+		<!--=== Add Users ===-->
+		<div class="modal fade" id="myModal" style="margin-top: 100px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">添加用户</h4>
+					</div>
+					<div class="modal-body">
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+							<input type="text" class="form-control" placeholder="姓名" aria-describedby="basic-addon1">
+						</div>
+
+						<div class="input-group" style="margin-top: 20px">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-cloud"></span></span>
+							<input type="text" class="form-control" placeholder="身份证" aria-describedby="basic-addon1">
+						</div>
+
+						<div class="input-group" style="margin-top: 20px">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-apple"></span></span>
+							<input type="text" class="form-control" placeholder="电话号码" aria-describedby="basic-addon1">
+						</div>
+
+						<div class="input-group" style="margin-top: 20px">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-tree-conifer"></span></span>
+							<input type="text" class="form-control" placeholder="住址" aria-describedby="basic-addon1">
+						</div>
+						<div class="input-group" style="margin-top: 20px">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-tree-conifer"></span></span>
+							<input type="text" class="form-control" placeholder="用户类型" aria-describedby="basic-addon1">
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".bs-example-modal-sm">确认</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery 3 -->
+		<script src="js/jquery.min.js"></script>
+		<!-- Bootstrap 3.3.7 -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- DataTables -->
+		<script src="js/jquery.dataTables.min.js"></script>
+		<script src="js/dataTables.bootstrap.min.js"></script>
+		<!-- page script -->
+
+		<script>
+			$(function() {
+				$('#example1').DataTable()
+				$('#example2').DataTable({
+					'paging': true,
+					'lengthChange': false,
+					'searching': false,
+					'ordering': true,
+					'info': true,
+					'autoWidth': false
+				})
+			})
+		</script>
+
+	</body>
+
+</html>

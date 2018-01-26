@@ -1,0 +1,113 @@
+<!--<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style media="screen,print">
+	
+	</style>
+
+	</head>
+
+	<body style="height: 100%;">
+<div style="height: 100%;">
+	<iframe src="bookinfo.html" frameborder="0" scrolling="no" id="test" >
+			
+		</iframe>
+</div>
+		
+		<script type="text/javascript">
+			function iframeAutoFit(iframeObj) {
+				setTimeout(function() {
+					if(!iframeObj) return;
+					iframeObj.height = (iframeObj.Document ? iframeObj.Document.body.scrollHeight : iframeObj.contentDocument.body.offsetHeight);
+					console.log("test")
+				}, 200)
+			}
+			window.onload = function() {
+				iframeAutoFit(document.getElementById('test'));
+			};
+		</script>
+
+	</body>
+
+</html>-->
+	
+	<!DOCTYPE html>
+<html>
+<head>
+<title>demo.html</title>
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<link type="text/css" href="css/selectpick.css"	rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/selectpick.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#select_pick").selectpick({
+			onSelect : function(value, text) {
+			}
+		});
+		var test1v='',test1t='';
+		$("#test_1").selectpick({selectText:"测试1",onSelect:function(value,text){document.getElementById('abc').value =value}});		 
+		//$("#test_1").selectpick({selectText:"测试1",onSelect:function(value,text){test1v=value,test1t=text}});
+		//$("#test_1").selectpick({selectText:"测试1",onSelect:function(value,text){alert("这是回调函数，选中的值："+value+" \n选中的下拉框文本："+text);}});
+		$("#test_2").selectpick({optionColor:"#37bc9b",selectedColor:"#37bc9b",disabled:true});
+		$("#test_3").selectpick({optionColor:"#E05865",selectedColor:"#E05865",onSelect:function(value,text){document.getElementById('abc').value =value}});		 
+	
+	});
+	
+</script>
+<style type="text/css">
+select {
+	
+}
+</style>
+</head>
+<body>
+<input name="abc" type="text" id="abc">
+<form name="form1" method="post" action="">
+	<h3>selectpick美化下拉框插件</h3>
+	<div style="float:left;width:200px;">
+	   带回调函数示例<br/><br/>
+	  <select name="test_1" id="test_1">
+	<option>请选择</option>
+			<option value="1">测试1</option>
+			<option value="2">测试2</option>
+			<option value="3">测试3</option>
+			<option value="4">测试4</option>
+	  </select>
+	</div>
+	<div style="float:left;width:200px;">
+        禁用selectpick示例<br/><br/>
+	  <select name="select2" id="test_2">
+	<option>请选择</option>
+			<option value="1">测试1</option>
+			<option value="2">测试2</option>
+			<option value="3">测试3</option>
+			<option value="4">测试4</option>
+	  </select>
+	</div>
+<div style="float:left;width:300px;">
+	普通选择示例（改变下拉颜色）<br/><br/>
+<select name="select3" id="test_3">
+  <option value="0">请选择</option>
+			<option value="1">测试1</option>
+			<option value="2">测试2</option>
+			<option value="3">测试3</option>
+			<option value="4">测试4</option>
+  </select>
+</div>
+<label>
+<input type="submit" name="button" id="button" value="提交" onclick="f()">
+</label>
+</form>
+<br><br><br><br><br><br>
+下拉框1的值：<?php echo $_POST['select1']; ?><br>
+下拉框2的值：<?php echo $_POST['select2']; ?><br>
+下拉框3的值：<?php echo $_POST['select3']; ?><br>
+</body>
+</html>
